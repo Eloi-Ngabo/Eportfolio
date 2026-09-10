@@ -153,7 +153,7 @@ nav,
 .dark-theme .fas-fa-circle-half-stroke,
 .dark-theme .header__para
 {
-color: white;
+color:white;
 }
 
 .dark-theme section {
@@ -194,9 +194,13 @@ height: 100px;
 }
 
 #personal-logo {
-    width: 50px;
-    height: 50px;
-    filter: invert(0.9);
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    filter: invert(5.9);
+    border-radius: 50%;
+   
+   
 }
 
 .nav__link--list {
@@ -296,7 +300,7 @@ LANDING PAGE
     content: "";
     width: 4px;
     height: 6px;
-    background-color: #242424;
+    background-color: #0e0d0d;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate-reverse;
  }
@@ -310,6 +314,25 @@ LANDING PAGE
         transform: translateY(-3px);
     }
  }
+
+
+ /* Define the keyframe animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Optional: slightly slides up as it fades in */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Final position after the fade-in */
+  }
+}
+
+/* Create the utility class */
+.fade-in {
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
 
  /* 
 
@@ -604,6 +627,10 @@ footer {
  
 .footer__logo--img {
     width: 70px;
+    border-radius: 50%;
+    /* filter: invert(5.9);
+    box-shadow: 0 20px 80px 0 rgba(46, 45, 45, 0.55); */
+   
 }
 
 .footer__social--list {
