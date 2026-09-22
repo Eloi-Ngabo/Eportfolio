@@ -575,7 +575,7 @@ PROJECTS
 }
 
 .project__wrapper .project__wrapper--bg {
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .project__wrapper--bg {
@@ -605,6 +605,7 @@ PROJECTS
 
 .project__description--para {
     margin: 16px 0;
+    
 }
 
 /* 
